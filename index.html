@@ -1,259 +1,767 @@
 <!DOCTYPE html>
-<html lang="ko"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>우리부동산중개법인 | Woori Real Estate Brokerage Corporation</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@100..900&amp;family=Noto+Sans+KR:wght@100..900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#0B1F3B",
-                        "background-light": "#f6f7f8",
-                        "background-dark": "#121820",
-                        "neutral-gray": "#e5e7eb",
-                        "text-main": "#1a1a1a",
-                        "text-muted": "#4b5563"
-                    },
-                    fontFamily: {
-                        "sans": ["Pretendard", "Noto Sans KR", "sans-serif"],
-                        "display": ["Pretendard", "sans-serif"]
-                    }
-                },
-            },
-        }
-    </script>
-<style type="text/tailwindcss">
-        body {
-            font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-            -webkit-font-smoothing: antialiased;
-        }
-        .hero-overlay {
-            background: linear-gradient(rgba(11, 31, 59, 0.75), rgba(11, 31, 59, 0.45));
-        }
-        .section-divider {
-            height: 1px;
-            background-color: rgba(11, 31, 59, 0.1);
-            width: 100px;
-            margin: 2rem 0;
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .info-card {
-            @apply flex flex-col gap-3 p-10 border-r border-b border-gray-100 last:border-r-0 h-full transition-colors hover:bg-gray-50/50;
-        }
-        .info-label {
-            @apply text-primary font-bold text-[12px] tracking-[0.2em] uppercase opacity-50 block mb-2;
-        }
-        .info-value {
-            @apply text-text-main text-xl font-bold leading-tight;
-        }
-        .info-subtext {
-            @apply text-text-muted text-sm font-medium mt-1;
-        }
-        .social-link {
-            @apply flex items-center gap-2 text-primary hover:text-blue-600 transition-colors font-bold text-lg;
-        }
-    </style>
-</head>
-<body class="bg-background-light dark:bg-background-dark font-sans text-text-main">
-<nav class="fixed top-0 w-full z-50 bg-white/95 dark:bg-background-dark/95 border-b border-primary/10 backdrop-blur-sm">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="text-primary dark:text-white text-2xl font-extrabold tracking-tight">우리부동산중개법인</span>
-</div>
-<div class="hidden md:flex items-center gap-12 text-primary/80 dark:text-white/80 font-medium text-sm tracking-wider">
-<a class="hover:text-primary transition-colors" href="#about">ABOUT</a>
-<a class="hover:text-primary transition-colors" href="#services">SERVICES</a>
-<a class="hover:text-primary transition-colors" href="#information">INFORMATION</a>
-</div>
-</div>
-</nav>
-<section class="relative h-[80vh] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0">
-<img alt="Corporate Office Building" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl4r4-8eT2TBtREs_FrIUUZ2dFniOICqGnP1Q5W2wTflVDDdPc9g7WB_VIvn0mFzy4B6lxOE21YIdOWbXIkuv_DMsHUhw9h-eALtIBy_N_0jOjwiXb6fIBPVvZ68qlrI7LIi0IPE9i_U9Cksgh0v7VDoti4MTqFy3626HjrdTBwk2LM-7c1cYyEhOW69R0Q-wGN_LnzyzY-uTursrwFWlu_6J94AALfFrFJ0jEWXX5KB8sW_ktXP3DS2_iiFteYNvI-B4xOyju01tg"/>
-<div class="absolute inset-0 hero-overlay"></div>
-</div>
-<div class="relative z-10 text-center text-white px-4">
-<h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight leading-tight">우리부동산중개법인</h1>
-<p class="text-xl md:text-2xl font-light tracking-[0.2em] opacity-90">상업용 부동산 중개 · 자문</p>
-</div>
-</section>
-<section class="py-32 bg-white dark:bg-background-dark px-6" id="about">
-<div class="max-w-5xl mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-<div>
-<span class="text-primary/60 dark:text-white/60 font-bold tracking-widest text-sm block mb-4 uppercase">Corporate Philosophy</span>
-<h2 class="text-4xl font-extrabold text-primary dark:text-white mb-8 leading-snug">
-                        전문성과 신뢰를 바탕으로 한<br/>최적의 비즈니스 파트너
-                    </h2>
-<div class="section-divider"></div>
-<p class="text-lg leading-relaxed text-text-muted dark:text-gray-400 mb-6">
-                        우리부동산중개법인은 복잡한 상업용 부동산 시장에서 고객의 자산 가치를 극대화하기 위한 전문적인 솔루션을 제공합니다. 우리는 단순한 중개를 넘어 기업의 전략적 자산 운용을 지원합니다.
-                    </p>
-</div>
-<div class="grid grid-cols-1 gap-8">
-<div class="p-8 border-l-4 border-primary bg-background-light dark:bg-white/5">
-<h3 class="text-xl font-bold text-primary dark:text-white mb-2">Risk Management</h3>
-<p class="text-sm text-text-muted dark:text-gray-400">철저한 시장 분석과 권리 분석을 통해 잠재적 리스크를 사전에 식별하고 최소화합니다.</p>
-</div>
-<div class="p-8 border-l-4 border-primary bg-background-light dark:bg-white/5">
-<h3 class="text-xl font-bold text-primary dark:text-white mb-2">Legal Compliance</h3>
-<p class="text-sm text-text-muted dark:text-gray-400">모든 거래 과정에서 관련 법규를 엄격히 준수하며 투명하고 공정한 중개 문화를 선도합니다.</p>
-</div>
-<div class="p-8 border-l-4 border-primary bg-background-light dark:bg-white/5">
-<h3 class="text-xl font-bold text-primary dark:text-white mb-2">Structural Procedures</h3>
-<p class="text-sm text-text-muted dark:text-gray-400">체계화된 프로세스를 통해 매각, 매수, 임대차의 모든 단계를 정밀하게 관리합니다.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-32 bg-background-light dark:bg-primary/5 px-6" id="services">
-<div class="max-w-7xl mx-auto">
-<div class="text-center mb-20">
-<h2 class="text-3xl font-extrabold text-primary dark:text-white uppercase tracking-wider">Professional Services</h2>
-<div class="w-16 h-1 bg-primary mx-auto mt-4"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="bg-white dark:bg-background-dark p-12 rounded-lg shadow-sm border border-primary/5 flex flex-col items-center text-center">
-<span class="material-icons text-primary dark:text-white text-5xl mb-6">business</span>
-<h3 class="text-2xl font-bold text-primary dark:text-white mb-4">Sales &amp; Lease</h3>
-<p class="text-text-muted dark:text-gray-400 leading-relaxed">프라임 오피스 및 대형 상업용 빌딩의 매각 및 임대차를 전문으로 수행하며 최적의 계약 조건을 도출합니다.</p>
-</div>
-<div class="bg-white dark:bg-background-dark p-12 rounded-lg shadow-sm border border-primary/5 flex flex-col items-center text-center">
-<span class="material-icons text-primary dark:text-white text-5xl mb-6">insights</span>
-<h3 class="text-2xl font-bold text-primary dark:text-white mb-4">Consulting</h3>
-<p class="text-text-muted dark:text-gray-400 leading-relaxed">시장 트렌드 분석과 자산 가치 평가를 통해 고객의 부동산 포트폴리오 최적화를 위한 자문을 제공합니다.</p>
-</div>
-<div class="bg-white dark:bg-background-dark p-12 rounded-lg shadow-sm border border-primary/5 flex flex-col items-center text-center">
-<span class="material-icons text-primary dark:text-white text-5xl mb-6">analytics</span>
-<h3 class="text-2xl font-bold text-primary dark:text-white mb-4">Site Analysis</h3>
-<p class="text-text-muted dark:text-gray-400 leading-relaxed">데이터 기반의 입지 분석 및 사업성 검토를 통해 신규 부지 확보 및 개발 전략을 수립합니다.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-32 bg-white dark:bg-background-dark px-6 border-t border-gray-100" id="information">
-<div class="max-w-[1400px] mx-auto">
-<div class="mb-20">
-<span class="text-primary/60 font-bold tracking-[0.4em] text-xs mb-3 block uppercase">Corporate Headquarters</span>
-<h2 class="text-5xl font-black text-primary dark:text-white mb-4 tracking-tight">Contact Information</h2>
-<div class="w-16 h-1 bg-primary"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-l border-t border-gray-100 rounded-xl overflow-hidden shadow-sm">
-<div class="info-card">
-<span class="info-label">Representative CEO</span>
-<p class="info-value">백현</p>
-<p class="info-subtext">우리부동산중개법인 대표이사</p>
-</div>
-<div class="info-card">
-<span class="info-label">Main Address</span>
-<p class="info-value">서울특별시 중랑구 봉우재로 141 2층</p>
-<p class="info-subtext">141 Bongujae-ro, Jungnang-gu, Seoul, 2F</p>
-</div>
-<div class="info-card">
-<span class="info-label">Phone &amp; Fax</span>
-<div class="flex flex-col gap-1">
-<p class="info-value text-2xl">02-2207-7779</p>
-<div class="flex items-center gap-2 mt-2">
-<span class="text-[10px] font-bold text-primary bg-gray-100 px-2 py-0.5 rounded">FAX</span>
-<span class="text-sm font-medium text-text-main">02-2207-7774</span>
-</div>
-</div>
-</div>
-<div class="info-card">
-<span class="info-label">Email Address</span>
-<p class="info-value text-lg">l2k.woori@gmail.com</p>
-<p class="info-subtext">공식 이메일 상담</p>
-</div>
-<div class="info-card bg-gray-50/30">
-<span class="info-label">Digital Channels</span>
-<div class="flex flex-col gap-3">
-<a class="social-link" href="https://www.youtube.com/@Woori-CRE" target="_blank">
-<span class="material-symbols-outlined text-xl">play_circle</span>
-<span>YouTube (@Woori-CRE)</span>
-</a>
-<a class="social-link" href="https://blog.naver.com/l2k_estate" target="_blank">
-<span class="material-symbols-outlined text-xl">article</span>
-<span>NAVER Blog</span>
-</a>
-<a class="social-link" href="https://www.instagram.com/woori.cre/" target="_blank">
-<span class="material-symbols-outlined text-xl">photo_camera</span>
-<span>Instagram</span>
-</a>
-</div>
-</div>
-<div class="info-card bg-gray-50/50">
-<span class="info-label">Business Hours</span>
-<p class="info-value">10:00 — 19:00</p>
-<p class="info-subtext">월 — 토 (일요일 및 공휴일 휴무)</p>
-</div>
-<div class="info-card bg-gray-50/50">
-<span class="info-label">Business Reg. No.</span>
-<p class="info-value">781-86-02474</p>
-<p class="info-subtext">사업자등록번호</p>
-</div>
-<div class="info-card bg-gray-50/50">
-<span class="info-label">Brokerage Reg. No.</span>
-<p class="info-value">41310-2021-00064</p>
-<p class="info-subtext">부동산중개업등록번호</p>
-</div>
-</div>
-<div class="mt-12 bg-primary p-12 md:p-16 rounded-xl text-white">
-<div class="flex flex-col lg:flex-row gap-12 items-start">
-<div class="shrink-0">
-<span class="text-white/40 font-bold tracking-[0.3em] text-[12px] mb-4 block uppercase">Directions</span>
-<h3 class="text-4xl font-extrabold mb-2">오시는 길</h3>
-<div class="w-12 h-1 bg-white/30"></div>
-</div>
-<div class="flex-grow">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-<div>
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-3xl">subway</span>
-<h4 class="text-xl font-bold">지하철 이용 시</h4>
-</div>
-<p class="text-lg text-white/80 leading-relaxed font-medium">
-                                    상봉역 중심 (7호선/경춘선/경의선 <span class="text-white font-bold underline underline-offset-4 decoration-white/40">3번 출구</span> 도보 5분)
-                                </p>
-</div>
-<div>
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-3xl">directions_bus</span>
-<h4 class="text-xl font-bold">버스 이용 시</h4>
-</div>
-<p class="text-lg text-white/80 leading-relaxed font-medium">
-                                    상봉신협 / 면목육거리 정류장 하차 후 도보 2분
-                                </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<footer class="bg-primary text-white/50 py-20 px-6 border-t border-white/5">
-<div class="max-w-7xl mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
-<div>
-<h2 class="text-white text-2xl font-black mb-6 tracking-tight">우리부동산중개법인</h2>
-<div class="text-xs leading-loose max-w-2xl font-light">
-<p class="mb-1">서울특별시 중랑구 봉우재로 141 2층 | 대표이사: 백현 | 사업자등록번호: 781-86-02474 | 부동산중개업등록번호: 41310-2021-00064</p>
-<p>Copyright © 2026 Woori Real Estate Brokerage Corporation. All Rights Reserved.</p>
-</div>
-</div>
-<div class="text-xs tracking-widest uppercase font-bold text-white/30">
-                    Professional Commercial Real Estate Agency
-                </div>
-</div>
-</div>
-</footer>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>우리부동산중개법인 | Woori Real Estate Brokerage Corporation</title>
 
-</body></html>
+  <!-- SEO -->
+  <meta name="description" content="우리부동산중개법인은 상업용 부동산(빌딩·오피스·상가) 매매/임대차 및 자문을 전문으로 수행합니다. 서울 중랑구 상봉역 인근." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0B1F3B" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="우리부동산중개법인 | 상업용 부동산 중개 · 자문" />
+  <meta property="og:description" content="상업용 부동산(빌딩·오피스·상가) 매매/임대차 및 자문. 서울 중랑구 상봉역 인근." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0B1F3B",
+            "bg-light": "#f6f7f8",
+            "bg-dark": "#121820",
+            "text-main": "#0f172a",
+            "text-muted": "#475569",
+            "line": "rgba(11,31,59,0.12)",
+          },
+          fontFamily: {
+            sans: ["Pretendard", "Noto Sans KR", "sans-serif"],
+          },
+          boxShadow: {
+            soft: "0 14px 36px rgba(2,6,23,0.10)",
+            deep: "0 22px 60px rgba(2,6,23,0.18)",
+          }
+        },
+      },
+    };
+  </script>
+
+  <style>
+    :root { --primary:#0B1F3B; }
+
+    body{
+      font-family:"Pretendard","Noto Sans KR",sans-serif;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    .material-symbols-outlined{
+      font-variation-settings:"FILL" 0,"wght" 450,"GRAD" 0,"opsz" 24;
+    }
+
+    /* HERO background (base) */
+    .hero-bg{
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(900px 500px at 15% 10%, rgba(62,166,255,.14), transparent 55%),
+        radial-gradient(1000px 600px at 85% 15%, rgba(11,31,59,.22), transparent 60%),
+        linear-gradient(180deg, rgba(11,31,59,.92), rgba(11,31,59,.70));
+    }
+
+    /* ✅ HERO premium layers: grid + noise + subtle vignette */
+    .hero-bg::before{
+      content:"";
+      position:absolute; inset:0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 44px 44px;
+      opacity:.22;
+      mask-image: radial-gradient(70% 55% at 50% 30%, black 55%, transparent 100%);
+      pointer-events:none;
+    }
+    .hero-bg::after{
+      content:"";
+      position:absolute; inset:-40px;
+      background:
+        radial-gradient(600px 260px at 22% 22%, rgba(62,166,255,0.20), transparent 60%),
+        radial-gradient(700px 280px at 78% 18%, rgba(255,255,255,0.08), transparent 60%),
+        radial-gradient(900px 500px at 50% 90%, rgba(0,0,0,0.25), transparent 55%);
+      pointer-events:none;
+      opacity:.9;
+    }
+    .hero-inner{ position:relative; z-index:1; }
+
+    /* subtle reveal */
+    .reveal{opacity:0; transform:translateY(10px); transition:opacity .7s ease, transform .7s ease;}
+    .reveal.in{opacity:1; transform:translateY(0);}
+
+    /* active nav underline */
+    .navlink{position:relative}
+    .navlink.active::after{
+      content:""; position:absolute; left:0; right:0; bottom:-10px;
+      height:2px; background:rgba(255,255,255,.88); border-radius:999px;
+    }
+
+    /* top progress bar */
+    .progress{position:fixed; top:0; left:0; right:0; height:3px; z-index:60; background:transparent;}
+    .progress > div{height:100%; width:0%; background:linear-gradient(90deg, #3ea6ff, rgba(62,166,255,.22));}
+
+    /* ✅ premium interactions */
+    .cardFx{
+      transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+      will-change: transform;
+    }
+    .cardFx:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 26px 70px rgba(2,6,23,0.14);
+      border-color: rgba(62,166,255,0.35);
+    }
+
+    .btnFx{
+      transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+      will-change: transform;
+    }
+    .btnFx:hover{ transform: translateY(-2px); }
+    .btnFx:active{ transform: translateY(0px) scale(0.99); }
+
+    /* ✅ input focus polish */
+    .inputFx{
+      transition: box-shadow .18s ease, border-color .18s ease, transform .18s ease;
+    }
+    .inputFx:focus{
+      box-shadow: 0 0 0 6px rgba(56,189,248,0.18);
+      border-color: rgba(56,189,248,0.55);
+      outline:none;
+    }
+
+    /* ✅ logo rendering stability */
+    .logoText{
+      dominant-baseline: middle;
+      alignment-baseline: middle;
+      paint-order: stroke;
+      stroke: rgba(0,0,0,0.0);
+      stroke-width: 0.8;
+    }
+  </style>
+</head>
+
+<body class="bg-bg-light dark:bg-bg-dark text-text-main dark:text-white">
+
+  <!-- Scroll progress -->
+  <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+
+  <!-- Top compliance strip -->
+  <div class="bg-white/90 dark:bg-bg-dark/90 border-b border-black/5 dark:border-white/10 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex flex-col md:flex-row md:items-center gap-2 text-xs text-slate-600 dark:text-white/70">
+      <div class="inline-flex items-center gap-2">
+        <span class="px-2 py-0.5 rounded-full bg-primary/10 dark:bg-white/10 text-primary dark:text-white font-extrabold tracking-wide">NOTICE</span>
+        <span>본 사이트의 정보는 참고용이며, 실제 거래 조건·권리관계는 현장 및 서류 확인 후 확정됩니다.</span>
+      </div>
+      <div class="md:ml-auto text-slate-500 dark:text-white/60">
+        상업용 부동산 중개 · 자문 | 서울 중랑구 상봉역 인근
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 bg-primary/95 dark:bg-black/30 border-b border-white/10 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3">
+        <!-- WCRE Inline Logo (no file needed) -->
+        <div class="w-10 h-10 rounded-2xl bg-white/10 border border-white/15 shadow-deep overflow-hidden flex items-center justify-center">
+          <svg viewBox="0 0 48 48" class="w-9 h-9" role="img" aria-label="WCRE 로고">
+            <defs>
+              <!-- ✅ id 충돌 방지: unique -->
+              <linearGradient id="wcreG_nav" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="rgba(255,255,255,0.95)"/>
+                <stop offset="1" stop-color="rgba(255,255,255,0.55)"/>
+              </linearGradient>
+            </defs>
+
+            <rect x="6" y="6" width="36" height="36" rx="12"
+                  fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+
+            <text x="24" y="24"
+                  text-anchor="middle"
+                  class="logoText"
+                  font-size="13"
+                  font-weight="900"
+                  letter-spacing="2"
+                  fill="url(#wcreG_nav)"
+                  font-family="Pretendard, Noto Sans KR, system-ui, sans-serif">
+              WCRE
+            </text>
+
+            <path d="M24 10 V38 M10 24 H38"
+                  stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+          </svg>
+        </div>
+
+        <div class="leading-tight">
+          <div class="text-white font-black tracking-tight text-lg">우리부동산중개법인</div>
+          <div class="text-white/70 text-[12px] font-semibold tracking-wide">Woori Real Estate Brokerage Corporation</div>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-10 text-white/80 font-semibold text-sm tracking-wide">
+        <a class="navlink hover:text-white transition-colors" href="#why" data-nav="why">WHY US</a>
+        <a class="navlink hover:text-white transition-colors" href="#services" data-nav="services">SERVICES</a>
+        <a class="navlink hover:text-white transition-colors" href="#process" data-nav="process">PROCESS</a>
+        <a class="navlink hover:text-white transition-colors" href="#contact" data-nav="contact">CONTACT</a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" type="button"
+          class="btnFx inline-flex items-center gap-2 px-3 py-2 rounded-xl border border-white/15 bg-white/10 text-white/90 hover:bg-white/15 transition">
+          <span class="material-symbols-outlined text-[18px]">dark_mode</span>
+          <span class="hidden sm:inline text-xs font-extrabold tracking-wide">THEME</span>
+        </button>
+
+        <a href="#contact"
+          class="btnFx inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white text-primary font-extrabold shadow-soft hover:shadow-deep transition">
+          빠른 상담
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="relative overflow-hidden">
+    <div class="hero-bg">
+      <div class="hero-inner max-w-7xl mx-auto px-6 py-16 md:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+          <!-- Copy -->
+          <div class="lg:col-span-7 reveal">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 text-white/80 text-xs font-extrabold tracking-[0.2em]">
+              COMMERCIAL REAL ESTATE
+              <span class="w-1 h-1 rounded-full bg-white/60"></span>
+              BROKERAGE & ADVISORY
+            </div>
+
+            <h1 class="mt-6 text-4xl md:text-6xl font-black text-white tracking-tight leading-[1.05]">
+              거래는 "감"이 아니라<br class="hidden md:block" />
+              <span class="text-white">검증과 절차</span>로 끝내야 합니다.
+            </h1>
+
+            <p class="mt-5 text-white/80 text-lg leading-relaxed font-medium max-w-2xl">
+              우리부동산중개법인은 상업용 부동산(빌딩·오피스·상가) 거래에서
+              <span class="text-white font-extrabold">조건 정리 → 후보 압축 → 권리·리스크 확인 → 협상/계약</span>까지
+              한 흐름으로 관리합니다.
+            </p>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+              <a href="#contact" class="btnFx inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-white text-primary font-extrabold shadow-deep hover:shadow-soft transition">
+                상담 요청하기
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+              <a href="#process" class="btnFx inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl border border-white/20 bg-white/10 text-white font-extrabold hover:bg-white/15 transition">
+                진행 절차 보기
+                <span class="material-symbols-outlined">task_alt</span>
+              </a>
+            </div>
+
+            <!-- Proof bullets -->
+            <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="cardFx rounded-2xl border border-white/15 bg-white/10 p-4">
+                <div class="text-white font-black">검증</div>
+                <div class="text-white/70 text-sm font-semibold">현장·서류 기반 확인</div>
+              </div>
+              <div class="cardFx rounded-2xl border border-white/15 bg-white/10 p-4">
+                <div class="text-white font-black">준법</div>
+                <div class="text-white/70 text-sm font-semibold">투명한 중개 프로세스</div>
+              </div>
+              <div class="cardFx rounded-2xl border border-white/15 bg-white/10 p-4">
+                <div class="text-white font-black">절차</div>
+                <div class="text-white/70 text-sm font-semibold">의사결정·협상 구조화</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Panel - Quick Form -->
+          <div class="lg:col-span-5 reveal">
+            <div class="cardFx rounded-3xl border border-white/15 bg-white/10 p-6 md:p-8 shadow-deep">
+              <div class="flex items-start justify-between gap-6">
+                <div>
+                  <div class="text-white/70 text-xs font-extrabold tracking-[0.3em]">CONTACT QUICK</div>
+                  <div class="mt-2 text-white text-2xl font-black tracking-tight">바로 연결</div>
+                  <p class="mt-2 text-white/75 text-sm font-medium">
+                    간단히 연락처만 남기면, 조건 정리를 먼저 도와드립니다.
+                  </p>
+                </div>
+                <span class="material-symbols-outlined text-white/70 text-3xl">handshake</span>
+              </div>
+
+              <form action="https://formspree.io/f/xpqjrank" method="POST" class="mt-6 grid gap-3">
+                <input type="hidden" name="_subject" value="[빠른상담] 우리부동산 문의" />
+
+                <label class="grid gap-1">
+                  <span class="text-white/75 text-xs font-extrabold tracking-wide">이름</span>
+                  <input name="이름" required
+                    class="inputFx rounded-2xl bg-white/90 text-slate-900 placeholder-slate-400 border border-white/20"
+                    placeholder="성함" />
+                </label>
+
+                <label class="grid gap-1">
+                  <span class="text-white/75 text-xs font-extrabold tracking-wide">연락처</span>
+                  <input name="연락처" required inputmode="tel"
+                    class="inputFx rounded-2xl bg-white/90 text-slate-900 placeholder-slate-400 border border-white/20"
+                    placeholder="010-0000-0000" />
+                </label>
+
+                <label class="grid gap-1">
+                  <span class="text-white/75 text-xs font-extrabold tracking-wide">희망 지역/유형</span>
+                  <input name="희망_지역_유형"
+                    class="inputFx rounded-2xl bg-white/90 text-slate-900 placeholder-slate-400 border border-white/20"
+                    placeholder="예: 상봉역 인근 상가 / 오피스 임대" />
+                </label>
+
+                <button type="submit"
+                  class="btnFx mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-white text-primary font-extrabold shadow-soft hover:shadow-deep transition">
+                  접수하기
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+
+                <div class="pt-2 border-t border-white/15 text-white/65 text-xs font-medium leading-relaxed">
+                  ※ 접수 내용은 상담 목적 외 사용되지 않습니다.<br/>
+                  ※ 실제 거래 조건은 현장·서류 확인 후 확정됩니다.
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- WHY US -->
+  <section id="why" class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl reveal">
+        <div class="text-primary dark:text-white/80 text-xs font-extrabold tracking-[0.35em] uppercase">WHY US</div>
+        <h2 class="mt-4 text-3xl md:text-4xl font-black tracking-tight text-primary dark:text-white">
+          "중개"를 넘어, 거래 품질을 관리합니다.
+        </h2>
+        <p class="mt-4 text-text-muted dark:text-white/70 text-lg leading-relaxed font-medium">
+          상업용 부동산은 변수와 리스크가 많습니다. 그래서 우리는
+          <span class="font-extrabold text-primary dark:text-white">거래를 표준화</span>합니다.
+          말이 아니라, 확인과 절차로 신뢰를 만듭니다.
+        </p>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="cardFx reveal rounded-3xl bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-soft p-7">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary dark:text-white text-3xl">verified</span>
+            <h3 class="text-xl font-black text-primary dark:text-white">검증 중심</h3>
+          </div>
+          <p class="mt-3 text-text-muted dark:text-white/70 font-medium leading-relaxed">
+            현장 확인·기초 서류 확인·거래 조건 정리를 통해,
+            "보이는 리스크"를 먼저 제거합니다.
+          </p>
+        </div>
+
+        <div class="cardFx reveal rounded-3xl bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-soft p-7">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary dark:text-white text-3xl">gavel</span>
+            <h3 class="text-xl font-black text-primary dark:text-white">준법·투명성</h3>
+          </div>
+          <p class="mt-3 text-text-muted dark:text-white/70 font-medium leading-relaxed">
+            관련 법규를 준수하며, 과장된 표현 없이
+            확인 가능한 정보로만 안내합니다.
+          </p>
+        </div>
+
+        <div class="cardFx reveal rounded-3xl bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-soft p-7">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary dark:text-white text-3xl">schema</span>
+            <h3 class="text-xl font-black text-primary dark:text-white">절차 표준화</h3>
+          </div>
+          <p class="mt-3 text-text-muted dark:text-white/70 font-medium leading-relaxed">
+            요구조건 정리 → 후보 압축 → 검증 → 협상/계약까지,
+            실무형 체크리스트로 진행합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20 md:py-28 bg-white dark:bg-white/5 border-y border-black/5 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto reveal">
+        <div class="text-primary/70 dark:text-white/70 text-xs font-extrabold tracking-[0.35em] uppercase">SERVICES</div>
+        <h2 class="mt-4 text-3xl md:text-4xl font-black tracking-tight text-primary dark:text-white">
+          목적에 맞춘 "결과물"로 지원합니다.
+        </h2>
+        <p class="mt-4 text-text-muted dark:text-white/70 text-lg font-medium leading-relaxed">
+          단순히 매물을 보여주는 것이 아니라, 의사결정에 필요한 핵심 정보를 정리해 드립니다.
+        </p>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="cardFx reveal rounded-3xl bg-bg-light dark:bg-black/20 border border-black/5 dark:border-white/10 p-8 shadow-soft">
+          <span class="material-icons text-primary dark:text-white text-5xl">business</span>
+          <h3 class="mt-5 text-2xl font-black text-primary dark:text-white">매매 · 임대차 중개</h3>
+          <p class="mt-3 text-text-muted dark:text-white/70 font-medium leading-relaxed">
+            빌딩·오피스·상가의 목표(수익/운영/이전)에 맞춰
+            계약 구조를 정리하고 협상까지 동행합니다.
+          </p>
+          <ul class="mt-5 space-y-2 text-sm text-text-muted dark:text-white/70 font-semibold">
+            <li class="flex gap-2"><span class="material-symbols-outlined text-[18px] text-primary dark:text-white">check_circle</span>조건 정리 및 우선순위 고정</li>
+            <li class="flex gap-2"><span class="material-symbols-outlined text-[18px] text-primary dark:text-white">check_circle</span>현장 확인·기초 서류 확인</li>
+            <li class="flex gap-2"><span class="material-symbols-outlined text-[18px] text-primary dark:text-white">check_circle</span>협상 포인트 정리 및 계약 지원</li>
+          </ul>
+        </div>
+
+        <div class="cardFx reveal rounded-3xl bg-bg-light dark:bg-black/20 border border-black/5 dark:border-white/10 p-8 shadow-soft">
+          <span class="material-icons text-primary dark:text-white text-5xl">insights</span>
+          <h3 class="mt-5 text-2xl font-black text-primary dark:text-white">자산 운용 자문</h3>
+          <p class="mt-3 text-text-muted dark:text-white/70 font-medium leading-relaxed">
+            보유 자산의 목표와 제약을 정리하고,
+            실행 가능한 선택지를 비교 가능한 형태로 제공합니다.
+          </p>
+          <ul class="mt-5 space-y-2 text-sm text-text-muted dark:text-white/70 font-semibold">
+            <li class="flex gap-2"><span class="material-symbols-outlined text-[18px] text-primary dark:text-white">check_circle</span>대안 비교표(조건/장단점)</li>
+            <li class="flex gap-2"><span class="material-symbols-outlined text-[18px] text-primary dark:text-white">check_circle</span>리스크 체크 메모</li>
+            <li class="flex gap-2"><span class="material-symbols-outlined text-[18px] text-primary dark:text-white">check_circle</span>의사결정용 요약 정리</li>
+          </ul>
+        </div>
+
+        <div class="cardFx reveal rounded-3xl bg-bg-light dark:bg-black/20 border border-black/5 dark:border-white/10 p-8 shadow-soft">
+          <span class="material-icons text-primary dark:text-white text-5xl">analytics</span>
+          <h3 class="mt-5 text-2xl font-black text-primary dark:text-white">입지 · 사업성 검토</h3>
+          <p class="mt-3 text-text-muted dark:text-white/70 font-medium leading-relaxed">
+            신규 부지/점포/오피스 검토 시,
+            사업성과 리스크를 정리해 "확신의 근거"를 만듭니다.
+          </p>
+          <ul class="mt-5 space-y-2 text-sm text-text-muted dark:text-white/70 font-semibold">
+            <li class="flex gap-2"><span class="material-symbols-outlined text-[18px] text-primary dark:text-white">check_circle</span>주변 수요·경쟁 구도 정리</li>
+            <li class="flex gap-2"><span class="material-symbols-outlined text-[18px] text-primary dark:text-white">check_circle</span>운영 관점 체크리스트</li>
+            <li class="flex gap-2"><span class="material-symbols-outlined text-[18px] text-primary dark:text-white">check_circle</span>대안 후보 압축 지원</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl reveal">
+        <div class="text-primary/70 dark:text-white/70 text-xs font-extrabold tracking-[0.35em] uppercase">PROCESS</div>
+        <h2 class="mt-4 text-3xl md:text-4xl font-black tracking-tight text-primary dark:text-white">
+          거래를 "체계"로 진행합니다.
+        </h2>
+        <p class="mt-4 text-text-muted dark:text-white/70 text-lg font-medium leading-relaxed">
+          불확실성을 줄이는 방법은 간단합니다. 핵심 단계를 고정하고, 매 단계에서 확인해야 할 것을 체크합니다.
+        </p>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="cardFx reveal rounded-3xl bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 p-7 shadow-soft">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center font-black">01</div>
+            <div>
+              <h3 class="text-xl font-black text-primary dark:text-white">요구조건 정리</h3>
+              <p class="mt-2 text-text-muted dark:text-white/70 font-medium">
+                가격·면적·업종·기간·우선순위를 고정해 "판단 기준"을 먼저 만듭니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardFx reveal rounded-3xl bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 p-7 shadow-soft">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center font-black">02</div>
+            <div>
+              <h3 class="text-xl font-black text-primary dark:text-white">후보 압축</h3>
+              <p class="mt-2 text-text-muted dark:text-white/70 font-medium">
+                조건 적합도·현장성·리스크를 함께 보며 shortlist로 좁힙니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardFx reveal rounded-3xl bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 p-7 shadow-soft">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center font-black">03</div>
+            <div>
+              <h3 class="text-xl font-black text-primary dark:text-white">현장 · 기초 서류 확인</h3>
+              <p class="mt-2 text-text-muted dark:text-white/70 font-medium">
+                현장 체크리스트 기반 확인 및 거래 리스크를 사전에 점검합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardFx reveal rounded-3xl bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 p-7 shadow-soft">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center font-black">04</div>
+            <div>
+              <h3 class="text-xl font-black text-primary dark:text-white">협상 · 계약</h3>
+              <p class="mt-2 text-text-muted dark:text-white/70 font-medium">
+                협상 포인트를 정리하고, 계약서 주요 조항 확인과 실행까지 지원합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- compliance block -->
+      <div class="mt-12 reveal rounded-3xl bg-primary text-white p-8 md:p-10 shadow-deep">
+        <div class="flex flex-col md:flex-row md:items-center gap-6">
+          <div class="flex-1">
+            <div class="text-white/70 text-xs font-extrabold tracking-[0.35em] uppercase">COMPLIANCE</div>
+            <h3 class="mt-3 text-2xl md:text-3xl font-black tracking-tight">확인 가능한 정보만 안내합니다.</h3>
+            <p class="mt-3 text-white/80 font-medium leading-relaxed">
+              과장된 수익/확정적 결과를 약속하지 않습니다. 거래 판단은 현장·서류 확인 이후,
+              고객의 의사결정에 따라 최종 확정됩니다.
+            </p>
+          </div>
+          <a href="#contact"
+             class="btnFx inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-white text-primary font-extrabold shadow-soft hover:shadow-deep transition">
+            상담으로 연결
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 md:py-28 bg-white dark:bg-white/5 border-t border-black/5 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="reveal">
+        <div class="text-primary/70 dark:text-white/70 text-xs font-extrabold tracking-[0.35em] uppercase">CONTACT</div>
+        <h2 class="mt-4 text-3xl md:text-4xl font-black tracking-tight text-primary dark:text-white">
+          상담 · 문의
+        </h2>
+        <p class="mt-4 text-text-muted dark:text-white/70 text-lg font-medium leading-relaxed max-w-3xl">
+          가장 빠른 방법은 "조건을 글로 정리"하는 것입니다. 지역/예산/면적/유형/희망 시점을 적어주시면
+          후보를 더 정확히 압축할 수 있습니다.
+        </p>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        <!-- Form -->
+        <div class="lg:col-span-7 reveal rounded-3xl bg-bg-light dark:bg-black/20 border border-black/5 dark:border-white/10 p-8 shadow-soft">
+          <form action="https://formspree.io/f/xpqjrank" method="POST" class="grid gap-4">
+            <input type="hidden" name="_subject" value="[일반문의] 우리부동산 상담 요청" />
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <label class="grid gap-1">
+                <span class="text-xs font-extrabold tracking-wide text-primary dark:text-white/80">이름</span>
+                <input name="이름" required
+                  class="inputFx rounded-2xl border border-black/10 dark:border-white/10 bg-white dark:bg-white/5 dark:text-white"
+                  placeholder="성함" />
+              </label>
+              <label class="grid gap-1">
+                <span class="text-xs font-extrabold tracking-wide text-primary dark:text-white/80">연락처</span>
+                <input name="연락처" required inputmode="tel"
+                  class="inputFx rounded-2xl border border-black/10 dark:border-white/10 bg-white dark:bg-white/5 dark:text-white"
+                  placeholder="010-0000-0000" />
+              </label>
+            </div>
+
+            <label class="grid gap-1">
+              <span class="text-xs font-extrabold tracking-wide text-primary dark:text-white/80">문의 내용</span>
+              <textarea name="문의내용" required rows="6"
+                class="inputFx rounded-2xl border border-black/10 dark:border-white/10 bg-white dark:bg-white/5 dark:text-white"
+                placeholder="예: 상봉역 인근 상가 임대 / 보증금·월세 범위 / 1층 우선 / 주차 필요 등"></textarea>
+            </label>
+
+            <label class="inline-flex items-center gap-2 text-sm font-semibold text-text-muted dark:text-white/70">
+              <input type="checkbox" name="개인정보동의" required class="rounded border-black/20 dark:border-white/20" />
+              개인정보 수집·이용에 동의합니다.
+            </label>
+
+            <button type="submit"
+              class="btnFx mt-2 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-white font-extrabold shadow-soft hover:shadow-deep transition">
+              문의 보내기
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+
+            <div class="pt-3 border-t border-black/10 dark:border-white/10 text-xs text-text-muted dark:text-white/60 leading-relaxed">
+              ※ 본 문의는 상담 목적이며, 실제 거래 조건·권리관계는 현장 및 서류 확인 후 확정됩니다.
+            </div>
+          </form>
+        </div>
+
+        <!-- info card -->
+        <aside class="lg:col-span-5 reveal rounded-3xl bg-primary text-white p-8 shadow-deep">
+          <div class="text-white/70 text-xs font-extrabold tracking-[0.35em] uppercase">CORPORATE INFORMATION</div>
+          <h3 class="mt-3 text-2xl font-black tracking-tight">우리부동산중개법인</h3>
+
+          <dl class="mt-6 grid gap-4 text-sm">
+            <div class="grid gap-1">
+              <dt class="text-white/60 font-extrabold">대표</dt>
+              <dd class="font-black text-lg">백현</dd>
+            </div>
+
+            <div class="grid gap-1">
+              <dt class="text-white/60 font-extrabold">주소</dt>
+              <dd class="font-semibold leading-relaxed">
+                서울특별시 중랑구 봉우재로 141 2층<br/>
+                <span class="text-white/70 text-xs">141 Bongujae-ro, Jungnang-gu, Seoul, 2F</span>
+              </dd>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="grid gap-1">
+                <dt class="text-white/60 font-extrabold">전화</dt>
+                <dd class="font-black text-lg">
+                  <a href="tel:02-2207-7779" class="underline underline-offset-4 decoration-white/30">02-2207-7779</a>
+                </dd>
+              </div>
+              <div class="grid gap-1">
+                <dt class="text-white/60 font-extrabold">팩스</dt>
+                <dd class="font-semibold">02-2207-7774</dd>
+              </div>
+            </div>
+
+            <div class="grid gap-1">
+              <dt class="text-white/60 font-extrabold">이메일</dt>
+              <dd class="font-semibold">
+                <a href="mailto:l2k.woori@gmail.com" class="underline underline-offset-4 decoration-white/30">l2k.woori@gmail.com</a>
+              </dd>
+            </div>
+
+            <div class="grid gap-1">
+              <dt class="text-white/60 font-extrabold">영업시간</dt>
+              <dd class="font-semibold">10:00 — 19:00 (월 — 토 / 일·공휴일 휴무)</dd>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="grid gap-1">
+                <dt class="text-white/60 font-extrabold">사업자등록번호</dt>
+                <dd class="font-semibold">781-86-02474</dd>
+              </div>
+              <div class="grid gap-1">
+                <dt class="text-white/60 font-extrabold">중개업등록번호</dt>
+                <dd class="font-semibold">41310-2021-00064</dd>
+              </div>
+            </div>
+          </dl>
+
+          <div class="mt-8 pt-6 border-t border-white/15">
+            <div class="text-white/60 text-xs font-extrabold tracking-[0.35em] uppercase">CHANNELS</div>
+            <div class="mt-4 flex flex-col gap-3 font-extrabold">
+              <a class="inline-flex items-center gap-2 hover:text-white/80 transition"
+                 href="https://www.youtube.com/@Woori-CRE" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined">play_circle</span>
+                YouTube (@Woori-CRE)
+              </a>
+              <a class="inline-flex items-center gap-2 hover:text-white/80 transition"
+                 href="https://blog.naver.com/l2k_estate" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined">article</span>
+                NAVER Blog
+              </a>
+              <a class="inline-flex items-center gap-2 hover:text-white/80 transition"
+                 href="https://www.instagram.com/woori.cre/" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined">photo_camera</span>
+                Instagram
+              </a>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-white/15 text-white/70 text-xs leading-relaxed font-medium">
+            오시는 길: 상봉역(7호선/경춘선/경의선) 3번 출구 도보 5분 · 상봉신협/면목육거리 정류장 도보 2분
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-primary text-white/60 py-14 px-6 border-t border-white/10">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+        <div>
+          <div class="text-white text-xl font-black tracking-tight">우리부동산중개법인</div>
+          <div class="mt-4 text-xs leading-loose max-w-3xl font-medium text-white/70">
+            <p class="mb-1">
+              서울특별시 중랑구 봉우재로 141 2층 | 대표: 백현 |
+              사업자등록번호: 781-86-02474 | 부동산중개업등록번호: 41310-2021-00064
+            </p>
+            <p>Copyright © <span id="year"></span> Woori Real Estate Brokerage Corporation. All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="text-xs tracking-widest uppercase font-extrabold text-white/30">
+          Professional Commercial Real Estate Agency
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // theme (persist)
+    const root = document.documentElement;
+    const toggle = document.getElementById("themeToggle");
+    const saved = localStorage.getItem("woori_theme");
+    if (saved === "dark") root.classList.add("dark");
+    const setIcon = () => {
+      const icon = toggle?.querySelector(".material-symbols-outlined");
+      if (!icon) return;
+      icon.textContent = root.classList.contains("dark") ? "light_mode" : "dark_mode";
+    };
+    setIcon();
+
+    toggle?.addEventListener("click", () => {
+      root.classList.toggle("dark");
+      localStorage.setItem("woori_theme", root.classList.contains("dark") ? "dark" : "light");
+      setIcon();
+    });
+
+    // year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // scroll progress
+    const bar = document.getElementById("progressBar");
+    const onScroll = () => {
+      const h = document.documentElement;
+      const scrolled = h.scrollTop || document.body.scrollTop;
+      const height = h.scrollHeight - h.clientHeight;
+      const pct = height > 0 ? (scrolled / height) * 100 : 0;
+      bar.style.width = pct + "%";
+    };
+    window.addEventListener("scroll", onScroll, { passive:true });
+    onScroll();
+
+    // reveal animation
+    const items = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(en => {
+        if (en.isIntersecting) {
+          en.target.classList.add("in");
+          io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    items.forEach(el => io.observe(el));
+
+    // active nav highlight
+    const navLinks = document.querySelectorAll("[data-nav]");
+    const sections = ["why","services","process","contact"]
+      .map(id => document.getElementById(id))
+      .filter(Boolean);
+
+    const setActive = (id) => {
+      navLinks.forEach(a => a.classList.toggle("active", a.dataset.nav === id));
+    };
+
+    const navIO = new IntersectionObserver((entries) => {
+      const visible = entries.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible?.target?.id) setActive(visible.target.id);
+    }, { threshold: [0.25, 0.5, 0.75] });
+
+    sections.forEach(sec => navIO.observe(sec));
+  </script>
+</body>
+</html>
