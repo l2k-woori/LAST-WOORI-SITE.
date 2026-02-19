@@ -71,7 +71,6 @@
         linear-gradient(180deg, rgba(11,31,59,.92), rgba(11,31,59,.70));
     }
 
-    /* HERO premium layers: grid + noise + subtle vignette */
     .hero-bg::before{
       content:"";
       position:absolute; inset:0;
@@ -95,22 +94,18 @@
     }
     .hero-inner{ position:relative; z-index:1; }
 
-    /* subtle reveal */
     .reveal{opacity:0; transform:translateY(10px); transition:opacity .7s ease, transform .7s ease;}
     .reveal.in{opacity:1; transform:translateY(0);}
 
-    /* active nav underline */
     .navlink{position:relative}
     .navlink.active::after{
       content:""; position:absolute; left:0; right:0; bottom:-10px;
       height:2px; background:rgba(255,255,255,.88); border-radius:999px;
     }
 
-    /* top progress bar */
     .progress{position:fixed; top:0; left:0; right:0; height:3px; z-index:60; background:transparent;}
     .progress > div{height:100%; width:0%; background:linear-gradient(90deg, #3ea6ff, rgba(62,166,255,.22));}
 
-    /* premium interactions */
     .cardFx{
       transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
       will-change: transform;
@@ -121,7 +116,6 @@
       border-color: rgba(62,166,255,0.35);
     }
 
-    /* ✅ 모바일 터치 최적화: 더 부드러운 애니메이션 */
     @media (max-width: 768px) {
       .cardFx:active {
         transform: translateY(-3px) scale(0.98);
@@ -135,7 +129,6 @@
     .btnFx:hover{ transform: translateY(-2px); }
     .btnFx:active{ transform: translateY(0px) scale(0.99); }
 
-    /* input focus polish */
     .inputFx{
       transition: box-shadow .18s ease, border-color .18s ease, transform .18s ease;
     }
@@ -145,7 +138,6 @@
       outline:none;
     }
 
-    /* logo rendering stability */
     .logoText{
       dominant-baseline: middle;
       alignment-baseline: middle;
@@ -154,7 +146,6 @@
       stroke-width: 0.8;
     }
 
-    /* ✅ 모바일 메뉴 */
     .mobile-menu {
       position: fixed;
       top: 0;
@@ -184,7 +175,6 @@
       pointer-events: auto;
     }
 
-    /* ✅ 모바일 텍스트 크기 조정 */
     @media (max-width: 640px) {
       .hero-title {
         font-size: 2rem;
@@ -195,17 +185,118 @@
       }
     }
 
-    /* ✅ 터치 타겟 최소 크기 보장 (44px) */
     .touch-target {
       min-height: 44px;
       min-width: 44px;
     }
 
-    /* ✅ 모바일 네비게이션 숨김 */
     @media (max-width: 768px) {
       .desktop-nav {
         display: none;
       }
+    }
+
+    /* ✅ 개인정보 동의 박스 스타일 */
+    .privacy-box {
+      background: rgba(11,31,59,0.06);
+      border: 1.5px solid rgba(11,31,59,0.14);
+      border-radius: 14px;
+      padding: 14px 16px;
+      font-size: 11.5px;
+      line-height: 1.75;
+      color: #475569;
+    }
+    .dark .privacy-box {
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.6);
+    }
+    .privacy-box-hero {
+      background: rgba(255,255,255,0.10);
+      border: 1.5px solid rgba(255,255,255,0.18);
+      border-radius: 14px;
+      padding: 14px 16px;
+      font-size: 11px;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.7);
+    }
+    .privacy-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 6px 0 8px;
+      font-size: 11px;
+    }
+    .privacy-table th {
+      background: rgba(11,31,59,0.10);
+      font-weight: 800;
+      padding: 5px 8px;
+      text-align: left;
+      border: 1px solid rgba(11,31,59,0.12);
+      color: #0B1F3B;
+      font-size: 10.5px;
+    }
+    .dark .privacy-table th {
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.85);
+    }
+    .privacy-table td {
+      padding: 5px 8px;
+      border: 1px solid rgba(11,31,59,0.10);
+      vertical-align: top;
+    }
+    .dark .privacy-table td {
+      border-color: rgba(255,255,255,0.10);
+    }
+    .privacy-table-hero {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 6px 0 8px;
+      font-size: 10.5px;
+    }
+    .privacy-table-hero th {
+      background: rgba(255,255,255,0.12);
+      font-weight: 800;
+      padding: 5px 8px;
+      text-align: left;
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.9);
+    }
+    .privacy-table-hero td {
+      padding: 5px 8px;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.7);
+      vertical-align: top;
+    }
+    .consent-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .consent-row input[type="checkbox"] {
+      margin-top: 2px;
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+    .consent-label {
+      font-weight: 800;
+      font-size: 12.5px;
+      line-height: 1.4;
+    }
+    .required-badge {
+      display: inline-block;
+      background: #ef4444;
+      color: white;
+      font-size: 9px;
+      font-weight: 900;
+      padding: 1px 5px;
+      border-radius: 4px;
+      margin-left: 4px;
+      vertical-align: middle;
+      letter-spacing: 0.05em;
     }
   </style>
 </head>
@@ -215,10 +306,10 @@
   <!-- Scroll progress -->
   <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
 
-  <!-- ✅ 모바일 메뉴 오버레이 -->
+  <!-- 모바일 메뉴 오버레이 -->
   <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
 
-  <!-- ✅ 모바일 메뉴 -->
+  <!-- 모바일 메뉴 -->
   <div class="mobile-menu" id="mobileMenu">
     <div class="p-6">
       <div class="flex justify-between items-center mb-8">
@@ -243,7 +334,7 @@
     </div>
   </div>
 
-  <!-- Top compliance strip - ✅ 모바일 간소화 -->
+  <!-- Top compliance strip -->
   <div class="bg-white/90 dark:bg-bg-dark/90 border-b border-black/5 dark:border-white/10 backdrop-blur">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2 text-xs text-slate-600 dark:text-white/70">
       <div class="flex items-center gap-2">
@@ -254,11 +345,10 @@
     </div>
   </div>
 
-  <!-- NAV - ✅ 모바일 최적화 -->
+  <!-- NAV -->
   <nav class="sticky top-0 z-50 bg-primary/95 dark:bg-black/30 border-b border-white/10 backdrop-blur">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4">
       <a href="#top" class="flex items-center gap-2 sm:gap-3">
-        <!-- Logo -->
         <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-white/10 border border-white/15 shadow-deep overflow-hidden flex items-center justify-center">
           <svg viewBox="0 0 48 48" class="w-8 h-8 sm:w-9 sm:h-9" role="img" aria-label="WCRE 로고">
             <defs>
@@ -286,7 +376,6 @@
         </div>
       </a>
 
-      <!-- Desktop nav -->
       <div class="desktop-nav hidden md:flex items-center gap-10 text-white/80 font-semibold text-sm tracking-wide">
         <a class="navlink hover:text-white transition-colors" href="#why" data-nav="why">WHY US</a>
         <a class="navlink hover:text-white transition-colors" href="#services" data-nav="services">SERVICES</a>
@@ -301,7 +390,6 @@
           <span class="hidden sm:inline text-xs font-extrabold tracking-wide">THEME</span>
         </button>
 
-        <!-- ✅ 모바일: 햄버거 메뉴, 데스크톱: 빠른 상담 -->
         <button id="openMobileMenu" class="md:hidden btnFx touch-target inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-white text-primary font-extrabold">
           <span class="material-symbols-outlined text-[18px]">menu</span>
         </button>
@@ -314,7 +402,7 @@
     </div>
   </nav>
 
-  <!-- HERO - ✅ 모바일 최적화 -->
+  <!-- HERO -->
   <header id="top" class="relative overflow-hidden">
     <div class="hero-bg">
       <div class="hero-inner max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
@@ -352,7 +440,6 @@
               </a>
             </div>
 
-            <!-- Proof bullets - ✅ 모바일 최적화 -->
             <div class="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div class="cardFx rounded-2xl border border-white/15 bg-white/10 p-3 sm:p-4">
                 <div class="text-white font-black text-sm sm:text-base">검증</div>
@@ -369,7 +456,7 @@
             </div>
           </div>
 
-          <!-- Right Panel - Quick Form - ✅ 모바일 최적화 -->
+          <!-- Right Panel - Quick Form (HERO) -->
           <div class="lg:col-span-5 reveal">
             <div class="cardFx rounded-3xl border border-white/15 bg-white/10 p-5 sm:p-6 md:p-8 shadow-deep">
               <div class="flex items-start justify-between gap-4 sm:gap-6">
@@ -407,8 +494,39 @@
                     placeholder="예: 상봉역 인근 상가 / 오피스 임대" />
                 </label>
 
+                <!-- ✅ 개인정보 동의 (헤로 폼) - 개인정보보호법 제15조, 제22조 준수 -->
+                <div class="privacy-box-hero">
+                  <table class="privacy-table-hero">
+                    <thead>
+                      <tr>
+                        <th>수집 항목</th>
+                        <th>수집 목적</th>
+                        <th>보유 기간</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>이름, 연락처</td>
+                        <td>상담 요청 회신</td>
+                        <td>상담 종료 후<br/>3개월 보관 후 파기</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p style="font-size:10px; color:rgba(255,255,255,0.6); margin-bottom:2px;">※ 입력 정보는 상담 목적 외 마케팅에 사용되지 않습니다.</p>
+                  <p style="font-size:10px; color:rgba(255,255,255,0.6); margin-bottom:2px;">※ 당사는 개인정보를 외부에 제공하지 않습니다.</p>
+                  <p style="font-size:10px; color:rgba(255,255,255,0.6);">※ 정보는 내부 보안 시스템을 통해 안전하게 관리됩니다.</p>
+                </div>
+
+                <div class="consent-row">
+                  <input type="checkbox" name="개인정보동의" id="heroPrivacyConsent" required />
+                  <label for="heroPrivacyConsent" class="consent-label text-white/90" style="font-size:12px; font-weight:800; cursor:pointer;">
+                    개인정보 수집·이용에 동의합니다.
+                    <span class="required-badge">필수</span>
+                  </label>
+                </div>
+
                 <button type="submit"
-                  class="btnFx touch-target mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-white text-primary font-extrabold shadow-soft hover:shadow-deep transition">
+                  class="btnFx touch-target mt-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-white text-primary font-extrabold shadow-soft hover:shadow-deep transition">
                   접수하기
                   <span class="material-symbols-outlined">arrow_forward</span>
                 </button>
@@ -426,7 +544,7 @@
     </div>
   </header>
 
-  <!-- WHY US - ✅ 모바일 패딩 조정 -->
+  <!-- WHY US -->
   <section id="why" class="py-16 sm:py-20 md:py-28">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="max-w-3xl reveal">
@@ -478,7 +596,7 @@
     </div>
   </section>
 
-  <!-- SERVICES - ✅ 모바일 최적화 -->
+  <!-- SERVICES -->
   <section id="services" class="py-16 sm:py-20 md:py-28 bg-white dark:bg-white/5 border-y border-black/5 dark:border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="text-center max-w-3xl mx-auto reveal">
@@ -537,7 +655,7 @@
     </div>
   </section>
 
-  <!-- PROCESS - ✅ 모바일 최적화 -->
+  <!-- PROCESS -->
   <section id="process" class="py-16 sm:py-20 md:py-28">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="max-w-3xl reveal">
@@ -600,7 +718,6 @@
         </div>
       </div>
 
-      <!-- compliance block - ✅ 모바일 최적화 -->
       <div class="mt-8 sm:mt-12 reveal rounded-3xl bg-primary text-white p-6 sm:p-8 md:p-10 shadow-deep">
         <div class="flex flex-col md:flex-row md:items-center gap-4 sm:gap-6">
           <div class="flex-1">
@@ -621,7 +738,7 @@
     </div>
   </section>
 
-  <!-- CONTACT - ✅ 모바일 최적화 -->
+  <!-- CONTACT -->
   <section id="contact" class="py-16 sm:py-20 md:py-28 bg-white dark:bg-white/5 border-t border-black/5 dark:border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="reveal">
@@ -663,13 +780,40 @@
                 placeholder="예: 상봉역 인근 상가 임대 / 보증금·월세 범위 / 1층 우선 / 주차 필요 등"></textarea>
             </label>
 
-            <label class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-text-muted dark:text-white/70">
-              <input type="checkbox" name="개인정보동의" required class="rounded border-black/20 dark:border-white/20" />
-              개인정보 수집·이용에 동의합니다.
-            </label>
+            <!-- ✅ 개인정보 동의 (일반문의 폼) - 개인정보보호법 제15조, 제22조 준수 -->
+            <div class="privacy-box">
+              <p style="font-size:11.5px; font-weight:900; color:#0B1F3B; margin-bottom:8px;" class="dark:text-white">개인정보 수집·이용 안내</p>
+              <table class="privacy-table">
+                <thead>
+                  <tr>
+                    <th>수집 항목</th>
+                    <th>수집 목적</th>
+                    <th>보유 기간</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>이름, 연락처</td>
+                    <td>상담 요청 회신</td>
+                    <td>상담 종료 후<br/>3개월 보관 후 파기</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-bottom:3px;">※ 입력 정보는 상담 목적 외 마케팅에 사용되지 않습니다.</p>
+              <p style="margin-bottom:3px;">※ 당사는 개인정보를 외부에 제공하지 않습니다.</p>
+              <p>※ 정보는 내부 보안 시스템을 통해 안전하게 관리됩니다.</p>
+            </div>
+
+            <div class="consent-row">
+              <input type="checkbox" name="개인정보동의" id="contactPrivacyConsent" required />
+              <label for="contactPrivacyConsent" class="consent-label text-primary dark:text-white/90" style="cursor:pointer;">
+                개인정보 수집·이용에 동의합니다.
+                <span class="required-badge">필수</span>
+              </label>
+            </div>
 
             <button type="submit"
-              class="btnFx touch-target mt-2 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-white font-extrabold shadow-soft hover:shadow-deep transition">
+              class="btnFx touch-target mt-1 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-white font-extrabold shadow-soft hover:shadow-deep transition">
               문의 보내기
               <span class="material-symbols-outlined">arrow_forward</span>
             </button>
@@ -680,7 +824,7 @@
           </form>
         </div>
 
-        <!-- info card - ✅ 모바일 최적화 -->
+        <!-- info card -->
         <aside class="lg:col-span-5 reveal rounded-3xl bg-primary text-white p-6 sm:p-8 shadow-deep">
           <div class="text-white/70 text-xs font-extrabold tracking-[0.35em] uppercase">CORPORATE INFORMATION</div>
           <h3 class="mt-3 text-xl sm:text-2xl font-black tracking-tight">우리부동산중개법인</h3>
@@ -721,17 +865,17 @@
 
             <div class="grid gap-1">
               <dt class="text-white/60 font-extrabold">영업시간</dt>
-              <dd class="font-semibold">10:00 — 19:00 (월 — 토 / 일·공휴일 휴무)</dd>
+              <dd class="font-semibold">연중무휴 24시간 상담 가능</dd>
             </div>
 
             <div class="grid grid-cols-1 gap-4">
               <div class="grid gap-1">
                 <dt class="text-white/60 font-extrabold">사업자등록번호</dt>
-                <dd class="font-semibold">781-86-02474</dd>
+                <dd class="font-semibold">231-85-04761</dd>
               </div>
               <div class="grid gap-1">
                 <dt class="text-white/60 font-extrabold">중개업등록번호</dt>
-                <dd class="font-semibold">41310-2021-00064</dd>
+                <dd class="font-semibold">41310-2021-00064-001</dd>
               </div>
             </div>
           </dl>
@@ -765,7 +909,7 @@
     </div>
   </section>
 
-  <!-- FOOTER - ✅ 모바일 최적화 -->
+  <!-- FOOTER -->
   <footer class="bg-primary text-white/60 py-10 sm:py-14 px-4 sm:px-6 border-t border-white/10">
     <div class="max-w-7xl mx-auto">
       <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 sm:gap-8">
@@ -774,7 +918,10 @@
           <div class="mt-4 text-[10px] sm:text-xs leading-loose max-w-3xl font-medium text-white/70">
             <p class="mb-1">
               서울특별시 중랑구 봉우재로 141 2층 | 대표: 백현<br class="sm:hidden" /> |
-              사업자등록번호: 781-86-02474<br class="sm:hidden" /> | 부동산중개업등록번호: 41310-2021-00064
+              사업자등록번호: 231-85-04761<br class="sm:hidden" /> | 부동산중개업등록번호: 41310-2021-00064-001
+            </p>
+            <p class="mb-1 text-white/50">
+              본점: 경기 구리시 수택동 376-1 | 사업자등록번호 781-86-02474 | 중개업등록번호 41310-2021-00064
             </p>
             <p>Copyright © <span id="year"></span> Woori Real Estate Brokerage Corporation. All Rights Reserved.</p>
           </div>
@@ -787,7 +934,7 @@
   </footer>
 
   <script>
-    // ✅ 모바일 메뉴 토글
+    // 모바일 메뉴 토글
     const mobileMenu = document.getElementById("mobileMenu");
     const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
     const openMobileMenuBtn = document.getElementById("openMobileMenu");
@@ -809,7 +956,6 @@
     closeMobileMenuBtn?.addEventListener("click", closeMenu);
     mobileMenuOverlay?.addEventListener("click", closeMenu);
 
-    // 모바일 메뉴 링크 클릭시 메뉴 닫기
     document.querySelectorAll(".mobile-navlink").forEach(link => {
       link.addEventListener("click", closeMenu);
     });
